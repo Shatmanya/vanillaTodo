@@ -36,5 +36,13 @@ function addTodo(event){
 }
 //trash function
 function remove(){
-    todoDiv.removeChild('li');
+    function remove(e){
+    const item = e.target;
+    if(item.classList[0]==='trash-btn')
+    {
+        todo=item.parentElement;
+        todo.remove();
+    }
+}
+
 }
