@@ -53,6 +53,11 @@ function remove(e){
     if(item.classList[0]==='complete-btn'){
         todo=item.parentElement;
         todo.classList.toggle("completed");
+        
+        item.onclick=()=>{
+            this.classList.add("normal");
+            this.classList.toggle("normal");
+        }
     }
 
 }
